@@ -32,6 +32,19 @@ img {
   max-width: 100%;
 }
 
+.wave {
+  width: 100%;
+  transform: translateY(10px);
+  color: #F6F6F6;
+}
+
+.wave-b {
+  width: 100%;
+  transform: rotate(180deg);
+  color: #F6F6F6;
+
+}
+
 .d-flex {
   display: flex;
   justify-content: center;
@@ -123,6 +136,7 @@ header nav ul li a{
 .jumbotron {
   background-image: url(../img/jumbo.png);
   background-size: cover;
+  margin-bottom: 100px;
 }
 
 .container.jumbo {
@@ -174,6 +188,7 @@ main section > .container {
 .text-container {
   width: 30%;
   padding: 40px 0 0 40px;
+  margin-bottom: 70px;
  }
 
  .text-container p {
