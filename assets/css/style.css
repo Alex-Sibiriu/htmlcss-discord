@@ -15,11 +15,18 @@ section {
   padding: 50px 0;
 }
 
+ul {
+  list-style: none;
+}
+
 h2 {
   font-size: 48px;
   margin-bottom: 25px;
  }
 
+h3 {
+  font-size: 27px;
+}
 
 img {
   max-width: 100%;
@@ -33,15 +40,17 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 0 14px;
+  padding: 0 18px;
   font-weight: bold;
   color: #23272A;
   background-color: white;
+  cursor: pointer;
 }
 
 .small-btn {
   line-height: 46px;
   border-radius: 23px;
+  font-size: 15px;
 }
 
 .big-btn {
@@ -101,7 +110,6 @@ header nav {
 }
 
 header nav ul {
-  list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -200,7 +208,6 @@ main section > .container {
 
 .big-container h3 {
   padding-top: 50px;
-  font-size: 27px;
   line-height: 27px;
 }
 
@@ -211,47 +218,76 @@ main section > .container {
 /* FOOTER */
 footer {
   background-color: #23272A;
+  color: white;
 }
 
-.info-box {
-  border-bottom: 1px dashed grey;
+footer .info-box{
+  padding-top: 0px;
+}
+
+footer h5,
+footer h3 {
+  color: #7289DA;
+}
+
+footer h3 {
+  line-height: 30px;
+}
+
+footer .social .language {
+  font-size: 13px;
+  margin: 20px 0 15px;
+}
+
+footer .social .language img {
+  height: 15px;
+}
+
+footer .social .language i {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.info-box .container{
+  border-bottom: 1px dashed #7289DA;
   padding: 100px 0 40px;
 }
 
+.info-box .container {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .info-box .social {
-  height: 600px;
-  width: 30%;
-  background-color: #F08080;
-  border: 1px dashed black;
-  margin-right: 5px;
+  width: 20%;
+}
+
+.info-box .social .social-icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-box .info-sections {
   width: 70%;
   display: flex;
+  font-size: 15px;
+}
+
+.info-section {
+  line-height: 30px;
 }
 
 .info-box .info-section {
-  height: 600px;
   width: 25%;
-  background-color: #20B2AA;
-  border: 1px dashed white;
+}
+
+footer .sign-up {
+  padding: 0 0 100px;
 }
 
 footer .cta {
   width: 100%;
   height: 50px;
-  background-color: #7FFFD4;
-
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-footer .cta .logo a,
-footer .cta button {
-  border: 1px dashed black;
-  background-color: #FFB6C1;
-  padding: 5px 10px;
-  cursor: pointer;
 }
