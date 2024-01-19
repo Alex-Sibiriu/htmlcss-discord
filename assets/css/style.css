@@ -2,30 +2,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: arial;
 }
 
  /* GENERALI */
-header {
-  background-color: #ADD8E6;
-}
-
-footer {
-  background-color: #23272A;
+body {
+  font-family: sans-serif;
+  color: #23272A;
 }
 
 section {
   padding: 50px 0;
 }
 
-.container {
-  width: 60%;
-  margin: 0px auto;
-  border: 1px dashed black;
+img {
+  max-width: 100%;
+}
 
+.d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 14px;
+  font-weight: bold;
+  color: #23272A;
+  background-color: white;
+}
+
+.small-btn {
+  line-height: 46px;
+  border-radius: 23px;
+}
+
+.big-btn {
+  line-height: 66px;
+  border-radius: 33px;
+  font-size: 1.2rem;
+  padding: 0 35px;
+  margin: 0 15px;
+}
+
+.dark-btn {
+  color: white;
+  background-color: #23272A;
+}
+
+.container {
+  width: 98%;
+  max-width: 1400px;
+  margin: 0px auto;
 }
 
 .coloured-section {
@@ -34,7 +62,14 @@ section {
 
  /* HEADER */
 header .nav-section {
-  padding: 15px 0;
+  padding: 30px 0;
+  background-color: #255EE9;
+}
+
+header .nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header .logo,
@@ -44,26 +79,12 @@ header .login {
   align-items: center;
 }
 
-header .logo {
-  width: 20%;
-  height: 48px;
-  text-align: center;
-  background-color: yellow;
-  border: 1px dashed black;
-  padding: 5px 0;
-}
-
 header nav {
-  width: 60%;
+  width: 45%;
 }
 
 header nav ul {
-  height: 48px;
   list-style: none;
-  padding: 5px 0;
-  background-color: yellow;
-  border: 1px dashed black;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -71,29 +92,36 @@ header nav ul {
 
 header nav ul li a{
   text-decoration: none;
-}
-
-header .login {
-  width: 20%;
-  height: 48px;
-  text-align: center;
-  background-color: yellow;
-  border: 1px dashed black;
-}
-
-header .login .login-btn {
-  padding: 5px 10px;
-  cursor: pointer;
+  color: white;
 }
 
 .jumbotron {
-  background-color: #00008B;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  padding: 100px;
 }
 
 .container.jumbo {
-  width: 45%;
-  height: 400px;
-  background-color: #EE82EE;
+  width: 90%;
+  max-width: 900px;
+  height: 550px;
+
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 2rem;
+}
+
+.jumbotron p {
+  padding: 50px 0 30px;
+  line-height: 25px;
+  font-size: 1.3rem;
+}
+
+.jumbotron .big-btn i {
+  margin-right: 10px;
 }
 
 /* MAIN */
@@ -127,6 +155,10 @@ header .login .login-btn {
  }
 
 /* FOOTER */
+footer {
+  background-color: #23272A;
+}
+
 .info-box {
   border-bottom: 1px dashed grey;
   padding: 10px 0 40px;
