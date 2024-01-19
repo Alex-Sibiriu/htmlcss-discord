@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: arial;
+}
+
+ /* GENERALI */
+header {
+  background-color: #ADD8E6;
+}
+
+footer {
+  background-color: #23272A;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 60%;
+  margin: 0px auto;
+  border: 1px dashed black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coloured-section {
+  background-color: #D3D3D3;
+}
+
+ /* HEADER */
+header .nav-section {
+  padding: 15px 0;
+}
+
+header .logo,
+header .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {
+  width: 20%;
+  height: 48px;
+  text-align: center;
+  background-color: yellow;
+  border: 1px dashed black;
+  padding: 5px 0;
+}
+
+header nav {
+  width: 60%;
+}
+
+header nav ul {
+  height: 48px;
+  list-style: none;
+  padding: 5px 0;
+  background-color: yellow;
+  border: 1px dashed black;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul li a{
+  text-decoration: none;
+}
+
+header .login {
+  width: 20%;
+  height: 48px;
+  text-align: center;
+  background-color: yellow;
+  border: 1px dashed black;
+}
+
+header .login .login-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.jumbotron {
+  background-color: #00008B;
+}
+
+.container.jumbo {
+  width: 45%;
+  height: 400px;
+  background-color: #EE82EE;
+}
+
+/* MAIN */
+.coloured-section {
+
+  background-color: #D3D3D3;
+}
+
+.img-container,
+.text-container,
+.big-contianer {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: 60%;
+  background-color: #1E90FF;
+ }
+
+.text-container {
+  width: 40%;
+  background-color: #FFC0CB;
+ }
+
+.container.big-container {
+  height: 930px;
+  background-color: #228B22;
+ }
+
+/* FOOTER */
+.info-box {
+  border-bottom: 1px dashed grey;
+  padding: 10px 0 40px;
+}
+
+.info-box .social {
+  height: 600px;
+  width: 30%;
+  background-color: #F08080;
+  border: 1px dashed black;
+  margin-right: 5px;
+}
+
+.info-box .info-sections {
+  width: 70%;
+  display: flex;
+}
+
+.info-box .info-section {
+  height: 600px;
+  width: 25%;
+  background-color: #20B2AA;
+  border: 1px dashed white;
+}
+
+footer .cta {
+  width: 100%;
+  height: 50px;
+  background-color: #7FFFD4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .cta .logo a,
+footer .cta button {
+  border: 1px dashed black;
+  background-color: #FFB6C1;
+  padding: 5px 10px;
+  cursor: pointer;
+}
